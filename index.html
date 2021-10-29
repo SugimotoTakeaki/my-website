@@ -1,14 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <iframe frameborder="0" scrolling="auto" src="https://dev-business.form-mailer.jp/fms/6e736fdd281" title="HTML Form" width="100%" height="100%">
-    <a href="https://dev-business.form-mailer.jp/fms/6e736fdd281" title="Contact">この部分はインラインフレームを使用しています</a>
-  </iframe>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
+
+    <title>お問い合わせ</title>
+    <link
+      href="https://pro.form-mailer.jp/fm/common/css/style_form_theme_template_1.css"
+      rel="stylesheet"
+    />
+    <script src="https://pro.form-mailer.jp/fm/common/js/vender/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://pro.form-mailer.jp/fm/common/js/vender/popper.min.js"></script>
+    <script src="https://pro.form-mailer.jp/fm/common/js/vender/bootstrap/bootstrap-4.0.0.min.js"></script>
+    <script
+      src="https://pro.form-mailer.jp/fm/common/js/apps/forms.js"
+      charset="Shift_JIS"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div
+        class="
+          contents
+          form-fieldset-margin-md form-fieldset-position-row
+          efo-on
+        "
+      >
+        <form
+          action="https://pro.form-mailer.jp/fm/service/Forms/confirm"
+          method="post"
+          name="form1"
+          enctype="multipart/form-data"
+          class="formmailer-form"
+          data-max-total-filesize="5242880"
+          accept-charset="UTF-8"
+          novalidate
+        >
+          <input type="hidden" name="key" value="7f6fdfe6142553" />
+          <h1 class="form-title">お問い合わせ</h1>
+          <p class="form-description">
+            内容によりお返事を差し上げられない場合、または、お返事にお時間をいただく場合があります。<br />
+            お問い合わせの内容によっては、電子メール以外の方法で回答を差し上げる場合がございます。
+          </p>
+          <hr />
+
+          <!-- name -->
+          <div
+            class="form-fieldset form-fieldset-name optional"
+            data-ng-words="[]"
+          >
+            <legend>名前</legend>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-4 form-fieldgroup">
+                  <input
+                    class="form-control form-name-sei"
+                    name="field_2273394_sei"
+                    type="text"
+                    autocapitalize="off"
+                    placeholder="姓"
+                    data-pattern="1"
+                  />
+                  <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-4 form-fieldgroup">
+                  <input
+                    class="form-control form-name-mei"
+                    name="field_2273394_mei"
+                    type="text"
+                    autocapitalize="off"
+                    placeholder="名"
+                    data-pattern="1"
+                  />
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- email -->
+          <div
+            class="form-fieldset form-fieldset-email required"
+            data-ng-words="[]"
+          >
+            <legend>メールアドレス</legend>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-12 form-fieldgroup">
+                  <input
+                    class="form-control form-email"
+                    name="field_2694346"
+                    type="email"
+                    id="field_2694346"
+                    size="30"
+                    placeholder="info@example.com"
+                    autocapitalize="off"
+                    required
+                  />
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-12 form-fieldgroup">
+                  <input
+                    class="form-control form-email"
+                    name="field_2694346_mcon"
+                    type="email"
+                    id="field_2694346_mcon"
+                    size="30"
+                    placeholder="確認用"
+                    autocapitalize="off"
+                    required
+                  />
+                  <div class="invalid-feedback"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- sex -->
+          <div class="form-fieldset form-fieldset-sex optional">
+            <legend>性別</legend>
+            <div class="form-group form-fieldgroup">
+              <div class="row">
+                <div class="col-md-6">
+                  <label
+                    for="field_2273396_0"
+                    class="form-label-radio-checkbox"
+                  >
+                    <input
+                      class="form-control"
+                      name="field_2273396"
+                      id="field_2273396_0"
+                      type="radio"
+                      value="0"
+                    />
+                    男性
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="field_2273396_1"
+                    class="form-label-radio-checkbox"
+                  >
+                    <input
+                      class="form-control"
+                      name="field_2273396"
+                      id="field_2273396_1"
+                      type="radio"
+                      value="1"
+                    />
+                    女性
+                  </label>
+                </div>
+              </div>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
+          <!-- date -->
+          <div class="form-fieldset form-fieldset-date optional">
+            <legend>生年月日</legend>
+            <div class="form-group form-fieldgroup">
+              <input
+                class="form-control form-group-control form-date-year"
+                name="field_2273397_y"
+                type="tel"
+                maxlength="4"
+                pattern="^\d+$"
+                placeholder="2000"
+              /><span class="form-label-suffix">年</span>
+              <select
+                class="form-control form-group-control form-date-month"
+                name="field_2273397_m"
+              >
+                <option value="">--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option></select
+              ><span class="form-label-suffix">月</span>
+              <select
+                class="form-control form-group-control form-date-day"
+                name="field_2273397_d"
+              >
+                <option value="">--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option></select
+              ><span class="form-label-suffix">日</span>
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
+          <!-- address -->
+          <div
+            class="form-fieldset form-fieldset-address-zip-text optional"
+            data-ng-words="[]"
+          >
+            <legend>住所</legend>
+            <div class="d-flex flex-column">
+              <div class="form-group form-fieldgroup">
+                <label>郵便番号</label><br />
+                <input
+                  class="form-control form-address-zip"
+                  name="field_2571381_zip"
+                  id="field_2571381_zip"
+                  type="tel"
+                  maxlength="7"
+                  pattern="^\d{7}$"
+                  placeholder="0000000"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="form-group form-fieldgroup">
+                <label>都道府県</label><br />
+                <select
+                  class="form-control form-address-pref"
+                  name="field_2571381_pref"
+                  id="field_2571381_pref"
+                >
+                  <option value="">選択してください</option>
+                  <option value="1">北海道</option>
+                  <option value="2">青森県</option>
+                  <option value="3">岩手県</option>
+                  <option value="4">宮城県</option>
+                  <option value="5">秋田県</option>
+                  <option value="6">山形県</option>
+                  <option value="7">福島県</option>
+                  <option value="8">茨城県</option>
+                  <option value="9">栃木県</option>
+                  <option value="10">群馬県</option>
+                  <option value="11">埼玉県</option>
+                  <option value="12">千葉県</option>
+                  <option value="13">東京都</option>
+                  <option value="14">神奈川県</option>
+                  <option value="15">新潟県</option>
+                  <option value="16">富山県</option>
+                  <option value="17">石川県</option>
+                  <option value="18">福井県</option>
+                  <option value="19">山梨県</option>
+                  <option value="20">長野県</option>
+                  <option value="21">岐阜県</option>
+                  <option value="22">静岡県</option>
+                  <option value="23">愛知県</option>
+                  <option value="24">三重県</option>
+                  <option value="25">滋賀県</option>
+                  <option value="26">京都府</option>
+                  <option value="27">大阪府</option>
+                  <option value="28">兵庫県</option>
+                  <option value="29">奈良県</option>
+                  <option value="30">和歌山県</option>
+                  <option value="31">鳥取県</option>
+                  <option value="32">島根県</option>
+                  <option value="33">岡山県</option>
+                  <option value="34">広島県</option>
+                  <option value="35">山口県</option>
+                  <option value="36">徳島県</option>
+                  <option value="37">香川県</option>
+                  <option value="38">愛媛県</option>
+                  <option value="39">高知県</option>
+                  <option value="40">福岡県</option>
+                  <option value="41">佐賀県</option>
+                  <option value="42">長崎県</option>
+                  <option value="43">熊本県</option>
+                  <option value="44">大分県</option>
+                  <option value="45">宮崎県</option>
+                  <option value="46">鹿児島県</option>
+                  <option value="47">沖縄県</option>
+                  <option value="99">その他</option>
+                </select>
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="form-group form-fieldgroup">
+                <label>市区町村番地</label><br />
+                <input
+                  class="form-control form-address-addr1"
+                  name="field_2571381_addr1"
+                  id="field_2571381_addr1"
+                  type="text"
+                  autocapitalize="off"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="form-group form-fieldgroup optional">
+                <label>マンション・ビル名</label><br />
+                <input
+                  class="form-control form-address-addr2"
+                  name="field_2571381_addr2"
+                  id="field_2571381_addr2"
+                  type="text"
+                  autocapitalize="off"
+                />
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- phone -->
+          <div
+            class="form-fieldset form-fieldset-phone-text optional"
+            data-ng-words="[]"
+          >
+            <legend>連絡先</legend>
+            <div class="form-group form-fieldgroup">
+              <input
+                class="form-control form-phone-number"
+                name="field_2916828"
+                type="text"
+                id="field_2916828"
+                pattern="^[\d-]+$"
+              />
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+
+          <div id="smart-button-container">
+            <div style="text-align: center">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+          <script
+            src="https://www.paypal.com/sdk/js?client-id=Afh3zGMWb-23pBUMR_GCjW3W9qPCQoVFaPZUHLFhSW-pQGrd7FvmH_y65ZP4WH1aMftI6GZW0jRyNCMg&enable-funding=venmo&currency=JPY"
+            data-sdk-integration-source="button-factory"
+          ></script>
+          <script>
+            function initPayPalButton() {
+              paypal
+                .Buttons({
+                  style: {
+                    shape: 'rect',
+                    color: 'gold',
+                    layout: 'vertical',
+                    label: 'paypal',
+                  },
+
+                  createOrder: function (data, actions) {
+                    return actions.order.create({
+                      purchase_units: [
+                        { amount: { currency_code: 'JPY', value: 1 } },
+                      ],
+                    })
+                  },
+
+                  onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (orderData) {
+                      // Full available details
+                      console.log(
+                        'Capture result',
+                        orderData,
+                        JSON.stringify(orderData, null, 2)
+                      )
+
+                      // Show a success message within this page, e.g.
+                      const element = document.getElementById(
+                        'paypal-button-container'
+                      )
+                      element.innerHTML = ''
+                      element.innerHTML = '<h3>Thank you for your payment!</h3>'
+
+                      // Or go to another URL:  actions.redirect('thank_you.html');
+                    })
+                  },
+                  onCancel: function (data) {
+                    console.log('Capture cancel', data)
+                  },
+                  onError: function (err) {
+                    console.log(err)
+                  },
+                })
+                .render('#paypal-button-container')
+            }
+            initPayPalButton()
+          </script>
+
+          <div class="form-buttons">
+            <input
+              class="btn btn-block btn-default form-btn-submit"
+              name="submit"
+              type="submit"
+              id="submit"
+              value="確認画面へ"
+            />
+          </div>
+
+          <input type="hidden" name="code" value="utf8" />
+        </form>
+
+        <div class="form-sslSeal">
+          <img
+            src="/panelfiles/img/ssl.png"
+            width="196"
+            height="76"
+            alt="このフォームは、SSL暗号化通信に対応しています"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
