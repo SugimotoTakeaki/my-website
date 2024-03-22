@@ -12,18 +12,25 @@
 </head>
 <body>
 	<div id="app">
-    <h1>Simple Demo</h1>
-
-    <p style="color: red">{{ error }}</p>
-
-    <p>Last result: <b>{{ result }}</b></p>
-
-    <div class="container d-flex justify-content-center">
-      <div style="border: 2px solid black">
+    <div class="container d-flex flex-column align-items-center p-5">
+      <div style="width: 600px; height: 600px;">
         <qrcode-stream :track="paintBoundingBox" @detect="onDetect" @error="onError"></qrcode-stream>
       </div>
+
+      <div class="modal" tabindex="-1" :class="{'d-block':  result.length > 0 }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              {{ result }}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-	</div>
+  </div>
 </body>
 <script>
   const { createApp, ref } = Vue
